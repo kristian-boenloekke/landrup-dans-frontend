@@ -29,7 +29,7 @@ export default async function Details({ params }) {
     return (
         <>
             <div className="h-[60vh] grid grid-rows-[3fr_1fr] grid-cols-[1fr_2fr] ">
-                <Image src={activity.asset.url} width={1000} height={1000} alt={activity.name} priority className="row-start-1 row-span-2 col-start-1 h-full col-span-2 z-[-10] object-cover" />
+                <Image src={`/${activity.id}.jpg`} width={1000} height={1000} alt={activity.name} priority className="row-start-1 row-span-2 col-start-1 h-full col-span-2 z-[-10] object-cover" />
                 <div className="col-start-2 row-start-1 w-full items-start flex justify-end p-6">
                     <BurgerMenu className="text-purple " />
                 </div>
