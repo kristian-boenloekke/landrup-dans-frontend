@@ -20,7 +20,6 @@ export function middleware(req) {
     const res = NextResponse.next()
     res.cookies.set('hasSeenWelcome', 'true', {
       path: '/', 
-      httpOnly: true, 
     })
     return res
   }
