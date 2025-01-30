@@ -1,0 +1,111 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900);
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=UnifrakturMaguntia&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: "Ubuntu", serif;
+  background-color: #5E2E53;
+  color: #fff;
+  
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.racing-sans-one {
+  font-family: "Racing Sans One", serif;
+}
+
+.roboto {
+  font-family: "Roboto", serif;
+  color: white;
+  opacity: 0.5;
+  letter-spacing: 2px;
+  text-shadow:
+    -3px -3px 0 #5E2E53,  
+    3px -3px 0 #5E2E53,
+    -3px 3px 0 #5E2E53,
+    3px 3px 0 #5E2E53;
+  /* -webkit-text-stroke: 1px #5E2E53;  */
+  
+}
+
+.text-outline {
+  text-shadow: #000 0px 0px 4px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.stroked {
+  -webkit-text-stroke: 1px #5E2E53;
+}
+
+.top-shadow {
+  box-shadow: 
+        inset 0px 11px 8px -10px #CCC,
+        inset 0px -11px 8px -10px #CCC; 
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+
+.fade-out {
+  animation-name: fadeOut;
+  animation-duration: 4s;
+}
+
+.fade-in-2 {
+  animation-name: fadeIn2;
+  animation-duration: 4s;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  30% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+@keyframes fadeIn2 {
+  0% {opacity: 0;}
+  30% {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+
+
+
+
+
+
+
+/* :root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
