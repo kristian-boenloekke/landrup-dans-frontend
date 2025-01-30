@@ -2,7 +2,6 @@
 const nextConfig = {
     images: {
         domains: [
-          'localhost',
           'kb-landrup-dans-api.onrender.com'
             
         ]
