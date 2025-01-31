@@ -28,7 +28,7 @@ export async function signIn(formState, formData) {
         }
     }
 
-    const response = await fetch(`${baseUrl}/auth/token`, {
+    const response = await fetch(`${baseUrl}/auth/token`, { signal: AbortSignal.timeout(20000) }, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
