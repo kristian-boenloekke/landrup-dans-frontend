@@ -60,7 +60,8 @@ export async function signUp(formState, formData) {
 
     const age = calculateAge(birthdate)
 
-    const response = await fetch(`${baseUrl}/api/v1/users`, { signal: AbortSignal.timeout(20000) }, {
+    const response = await fetch(`${baseUrl}/api/v1/users`, {
+        signal: AbortSignal.timeout(20000),
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
